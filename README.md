@@ -4,4 +4,4 @@
 
 GDP finder is for simple GDP calculation.
 
-> 2021, Christian Alvarez. Malcom X College. MIT license
+> \U+00AE 2021, Christian Alvarez. Malcom X College. MIT license

@@ -67,7 +67,7 @@ class GDPfinder:
 
 ## needs debug
     ## finds the new percentage of the gdp
-    '''
+    """
     def newpercent(new_gdp, old_gdp):
         ## find the new percentage
         if new_gdp < old_gdp: ## if the old gdp is greater then the new gdp
@@ -75,4 +75,4 @@ class GDPfinder:
         else: 
         
         return newGDPpercent
-    '''
+    """
