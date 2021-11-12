@@ -1,6 +1,6 @@
 '''
 Basic MacroEconomics Library
-
+)
 Author: Christian Alvarez
 Date: Nov 3, 2021
 Licience: MIT
