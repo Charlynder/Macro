@@ -1,12 +1,14 @@
 '''
-GDP Finder Library
+Basic MacroEconomics Library
 
 Author: Christian Alvarez
 Date: Nov 3, 2021
 Licience: MIT
 '''
 
-class GDPfinder:
+
+## the name of the library is "Econ"
+class Econ:
     ## finds the nominal gdp 
     def nominalGDP(DurableGoods, NondurableGoods, Services, Structures, ChangeInInventories):
         ## calculate rGDP

@@ -1,7 +1,5 @@
-# Python GDP Libary
+# Python MacroEconomics Libary
 
-## GDP finder is a library for Python 3
-
-GDP finder is for simple GDP calculation.
+Econ is for simple MacroEconomics library for python. I've made this library becuase this for my homework, but I think it can be useful for other people
 
 > 2021, Christian Alvarez. Malcom X College. MIT license
