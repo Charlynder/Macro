@@ -1,6 +1,5 @@
 '''
 Basic MacroEconomics Library
-)
 Author: Christian Alvarez
 Date: Nov 3, 2021
 Licience: MIT
@@ -13,59 +12,39 @@ class Econ:
     def nominalGDP(DurableGoods, NondurableGoods, Services, Structures, ChangeInInventories):
         ## calculate rGDP
         gdpReg = float(DurableGoods + NondurableGoods + Services + Structures + ChangeInInventories)
-        ## convert to percentage
-        pGDP = float((DurableGoods / gdpReg) * 100)
-
-        return float(pGDP),  float(gdpReg)
+        return float((DurableGoods / gdpReg) * 100),  float(gdpReg)
 
     ## find the government spending amount 
     def govSpend(GDP, Consumpion, Investment, Exports, Imports):
-        govSpend = float(GDP - Consumpion - Investment - (Exports - Imports))
-
-        return float(govSpend)
+        return float(GDP - Consumpion - Investment - (Exports - Imports))
 
     ## find the consumpion spending amount
     def consSpend(gdp, government, investment, exports, imports):
-        consSpend = float(gdp - government - investment - (exports - imports))
-
-        return float(consSpend)
+        return float(gdp - government - investment - (exports - imports))
 
     ## find the consumpion spending amount
     def investSpend(gdp, government, consumpion, exports, imports):
-        investSpend = float(gdp - government - consumpion - (exports - imports))
-
-        return float(investSpend)
+        return float(gdp - government - consumpion - (exports - imports))
 
     ## finds the total gdp 
     def totalGDP(Consumption, Investment, Government, Exports, Imports):
-        ## calculate tGDP
-        gdpTotal = float(Consumption + Investment + Government + (Exports - Imports))
-
-        return float(gdpTotal)
+        return float(Consumption + Investment + Government + (Exports - Imports))
 
     ## finds the real gdp 
     def realGDP(nominalGDP, priceIndex):
-        ## find the real gdp
-        realgdp = nominalGDP / (priceIndex / 100)
-
-        return float(realgdp)
+        return float(nominalGDP / (priceIndex / 100))
 
     ## finds the gdp per capita 
     def perCapita(realgdp, population):
-        percapita = float(realgdp / population)
-
-        return percapita
+        return float(realgdp / population)
 
     ## finds the exchange rate 
     def exchangerate(foreignGDP, foreignValue, usValue):
-        covertedgdp = float(foreignGDP / (foreignValue /usValue))
-
-        return covertedgdp
+        return float(foreignGDP / (foreignValue /usValue))
 
     ## find the population based on the the gdp & the per capita amount
     def findPopulation(realgdp, perCapita):
-        population = realgdp / perCapita
-        return population
+        return realgdp / perCapita
 
 ## needs debug
     ## finds the new percentage of the gdp
@@ -78,3 +57,15 @@ class Econ:
         
         return newGDPpercent
     """
+
+    ## find the trade Balance
+    def tradeBalance(goods, services, incomePayment, unilateralTransfer):
+        return (goods) + (services) + (incomePayment) + (unilateralTransfer)
+
+    ## find the saving value
+    def findSavings(trade, savings, investment, government, difference):
+        return (trade) + (government) - (investment) - (savings + difference)
+
+
+    def findInvestment(trade, savings, investment, government, difference):
+        return savings + government - investment - (trade + difference)
