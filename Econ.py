@@ -40,7 +40,7 @@ class Econ:
 
     ## finds the exchange rate 
     def exchangerate(foreignGDP, foreignValue, usValue):
-        return float(foreignGDP / (foreignValue /usValue))
+        return float(foreignGDP / (foreignValue / usValue))
 
     ## find the population based on the the gdp & the per capita amount
     def findPopulation(realgdp, perCapita):
@@ -61,10 +61,13 @@ class Econ:
     ## find the trade Balance
     def tradeBalance(goods, services, incomePayment, unilateralTransfer):
         return (goods) + (services) + (incomePayment) + (unilateralTransfer)
+    def tradeBalanceA(goods, services, incomePayment, unilateralTransfer):
+        return (goods) + (services) + (incomePayment)
+
 
     ## find the saving value
     def findSavings(trade, savings, investment, government, difference):
-        return (trade) + (government) - (investment) - (savings + difference)
+        return trade + government - investment - (savings + difference)
 
 
     def findInvestment(trade, savings, investment, government, difference):
