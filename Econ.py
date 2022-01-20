@@ -5,8 +5,6 @@ Date: Nov 3, 2021
 Licience: MIT
 '''
 
-
-## the name of the library is "Econ"
 class Econ:
     ## finds the nominal gdp 
     def nominalGDP(DurableGoods, NondurableGoods, Services, Structures, ChangeInInventories):
@@ -46,7 +44,7 @@ class Econ:
     def findPopulation(realgdp, perCapita):
         return realgdp / perCapita
 
-## needs debug
+    ## needs debug
     ## finds the new percentage of the gdp
     """
     def newpercent(new_gdp, old_gdp):
@@ -58,17 +56,22 @@ class Econ:
         return newGDPpercent
     """
 
+    ## finds the percent change
+    def percentChange(changeInQuantity, quantity):
+        return changeInQuantity / quantity
+
     ## find the trade Balance
     def tradeBalance(goods, services, incomePayment, unilateralTransfer):
         return (goods) + (services) + (incomePayment) + (unilateralTransfer)
-    def tradeBalanceA(goods, services, incomePayment, unilateralTransfer):
-        return (goods) + (services) + (incomePayment)
 
+    ## finds the current balance
+    def currentBalance(goods, services, incomePayment, unilateralTransfer):
+        return (goods) + (services) + (incomePayment)
 
     ## find the saving value
     def findSavings(trade, savings, investment, government, difference):
         return trade + government - investment - (savings + difference)
 
-
+    ## find the investment value
     def findInvestment(trade, savings, investment, government, difference):
         return savings + government - investment - (trade + difference)
