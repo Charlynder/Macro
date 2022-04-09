@@ -1,8 +1,6 @@
-# Python MacroEconomics Libary
+# Macro
 
-Econ is for simple MacroEconomics library for python & Java. I've made this library becuase this for my homework, but I think it can be useful for other people.
+Macro is for basic MacroEconomics library for python. I've made this library to use for my class. It good to use in Jupyter Notebooks
 
-The Python verson is having some issues; because of that, the project might be written in only Java
 
-> 2021, Christian Alvarez. Malcom X College. MIT license
-
+> 2022, Christian Alvarez. Malcom X College.
